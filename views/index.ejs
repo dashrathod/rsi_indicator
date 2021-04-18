@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Currency</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <h1><%=symbols.length%></h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Currency</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(var i of symbols) { %>
+                <tr>
+                    <td>
+                        <%= i.symbol %>
+                    </td>
+                </tr>
+                <% } %>
+        </tbody>
+    </table>
+</body>
+
+</html>
