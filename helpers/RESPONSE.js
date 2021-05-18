@@ -21,7 +21,6 @@ const responseHelper = {
     serverError: async function (res, error, httpCode = 200) {
         console.error("\n\n\nSERVER_ERROR : ", error);
         console.error("\n\n\n");
-        await this.logError(error, res);
         res.status(httpCode).json({
             statusCode: 500,
             message: 'Server Error'

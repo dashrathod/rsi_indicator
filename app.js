@@ -11,6 +11,7 @@ var usersRouter = require('./routes/users');
 //#region extLibarary
 const dotenv = require('dotenv').config();
 const RESPONSE = require('./helpers/RESPONSE.js');
+var mailed = require('./helpers/MAIL.js');
 //#endregion
 
 var app = express();

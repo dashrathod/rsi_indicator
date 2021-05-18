@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Currency</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <h1>All Order : <%=JSON.stringify(data.length,null,2)%></h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Currency</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(var i of data) { %>
+                <tr>
+                    <td>
+                        <pre><%=JSON.stringify(i,null,2)%></pre>
+                    </td>
+                </tr>
+                <% } %>
+        </tbody>
+    </table>
+</body>
+
+</html>
